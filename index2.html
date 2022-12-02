@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Site</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/b4c62562db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <nav class="container">
+          <div class="left_navbar">
+      
+            <div (click)="toMyclick()" class="menu">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          
+          <div class="logo"><span>Educ</span>ation</div>
+      
+          <ul class="navbar">
+            <li><a (click)="link()" routerLink="/home">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Achievements</a></li>
+            <li><a href="">Teams</a></li>
+            <!-- <li><fa-icon [icon]="faSearch"></fa-icon></li> -->
+          </ul>
+        <div  class="search">
+          <i class="fa-solid fa-magnifying-glass searchicon"></i>
+          <div class="slash"></div>
+        </div>
+        
+      <div class="input_search">
+        <fa-icon class="searchicon_input" [icon]="faSearch"></fa-icon>
+        <input type="search" name="" id="txtsearch" placeholder="Search">
+      </div>
+      </nav>
+      </header>
+      
+      <section id="home">
+        <div class="home-container container">
+          <div class="content">
+            <h1>You learn <br> Better when we <br> are together!</h1>
+            <button>Get's started</button>
+          </div>
+      
+          <div class="img">
+            <img class="telephone_icon" src="assets/img/telephone.png" alt="">
+      
+            <img src="assets/img/home.png" alt="">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+          </div>
+        </div>
+      
+        <div class="home_modal">
+          <div class="modal_container">
+            <div class="back">
+              <fa-icon class="back_icon" [icon]="faArrowLeft"></fa-icon>
+            </div>
+      
+            <div class="right_clear">
+              <div class="dots"></div>
+              <div class="dots"></div>
+            </div>
+      
+            <h1>What is your name?</h1>
+            <form action="#">
+              <div class="name">
+                <input type="email" id="firstname" placeholder="Firstname">
+                <input type="text" id="lastname" placeholder="Lastname">
+              </div>
+            </form>
+          </div>
+      
+        </div>
+      </section>
+
+
+
+      <script src="script.js"></script>
+      
+</body>
+</html>
